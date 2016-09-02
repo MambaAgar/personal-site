@@ -5,10 +5,11 @@
 	<meta charset="utf-8" name="Max Goodridge" content="Portfolio">
 	<title>Portfolio</title>
 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
 	<link rel="stylesheet" href="css/style.css" title="main" charset="utf-8">
 	<link rel="stylesheet" href="css/lightbox.css" title="main" charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css" title="main" charset="utf-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
@@ -66,11 +67,11 @@
 
   			<div class="btn-group buffer">
 				<center>
-  				<a href="https://www.facebook.com/max.goodridge" class="btn btn-lg btn-primary outline" id="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a><!--primary-->
-  				<a href="https://www.youtube.com/channel/UCAx4nmhI7S1RcPiaG-Uw0tg" class="btn btn-lg btn-danger outline" id="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube</a><!--danger-->
-  				<a href="https://www.instagram.com/maxg303/" class="btn btn-lg btn-warning outline" id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a><!--warning-->
-  				<a href="https://www.stackoverflow.com/users/4548304/max-goodridge?tab=profile" class="btn btn-lg btn-info outline"id="se"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a><!--info-->
-				<a href="http://www.github.com/maxg203" class="btn btn-lg btn-success outline" id="github"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a><!--success-->
+  				<a href="https://www.facebook.com/max.goodridge" class="btn btn-lg btn-primary outline" target="_blank" id="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a><!--primary-->
+  				<a href="https://www.youtube.com/channel/UCAx4nmhI7S1RcPiaG-Uw0tg" class="btn btn-lg btn-danger outline" target="_blank" id="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube</a><!--danger-->
+  				<a href="https://www.instagram.com/maxg303/" class="btn btn-lg btn-warning outline" target="_blank" id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a><!--warning-->
+  				<a href="https://www.stackoverflow.com/users/4548304/max-goodridge?tab=profile" class="btn btn-lg btn-info outline" target="_blank" id="se"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a><!--info-->
+				<a href="http://www.github.com/maxg203" class="btn btn-lg btn-success outline" target="_blank" id="github"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a><!--success-->
 			</center>
   			</div>
   		</div><!-- End container -->
@@ -203,10 +204,18 @@
 	<div class="container">
 		<section>
 			<div class="page-header">
-  				<h2>Projects<br><small>Here are some of the best things that I have
-					created so far in my opinion (in no particular order). <br>
-					<i><strong>I can't wait for you to see what I'm working on right now!</strong></i></small></h2>
+  				<h2>Projects<br><small>
+					Here are some of the best things that I have
+					created so far in my opinion (in no particular order).
+					<br>
+					<i><strong>I can't wait for you to see what I'm working on right now!</strong></i>
+				</small></h2>
   			</div><!-- End Page Header -->
+			<div class="row scroll-buffer-l" id="panda">
+				<div class="col-sm-12">
+					<h1 id="panda-text">joinpanda.io</h1>
+				</div>
+			</div>
 			<div class="row scroll-buffer-l" id="mvp-landing">
 				<div class="col-sm-6">
 					<a href="images/mvp.jpg" data-lightbox="mvp-modal">
@@ -222,10 +231,10 @@
 						In this case, it was an "Email List" module. That form in the upper right of the website would take users names and emails. It then validates and appropriately formats the data ready for entry in to the database. Using Django models means that a new database table will automatically be created by Django in whichever Django compatible database technology that you want to use.
 					</p>
 					<p class="center">
-						Django generates all the SQL for you so all you have to do is install the app in your Django project and you're pretty much good to go with your email own perasonal sign up form which can automatically collect the users full name and email and save it to your database for future reference.
+						Django generates all the SQL for you so all you have to do is install the app in your Django project and you're pretty much good to go with your own personal email sign up form which can automatically collect the users full name and email and save it to your database for marketing or public anouncements.
 					</p>
 					<br>
-					<center><a href="https://github.com/maxg203/mvp-landing" class="btn btn-success">View on GitHub</a></center>
+					<center><a href="https://github.com/maxg203/mvp-landing" class="btn btn-success" target="_blank" >View on GitHub</a></center>
   				</div>
   			</div><!-- End row -->
 			<hr>
@@ -249,7 +258,7 @@
 						Click on Van Rossum's face or the following link to be taken to the codepen.
 					</p>
 					<br>
-					<center><a href="https://codepen.io/maxg203/full/YWXzpy/" class="btn btn-success">View on Codepen</a></center>
+					<center><a href="https://codepen.io/maxg203/full/YWXzpy/" class="btn btn-success" target="_blank" >View on Codepen</a></center>
   				</div>
   				<div class="col-sm-6">
   					<a href="https://codepen.io/maxg203/full/YWXzpy/"><img src="images/rossum.jpg" class="img-responsive" alt="rossum"></a>
@@ -276,7 +285,7 @@
 						I hope you enjoy playing this game, and if you don't then at least you'll probably have beaten my highscore!
 					</p>
 					<br>
-					<center><a href="https://itunes.apple.com/us/app/flip-crash/id1032532002?mt=8" class="btn btn-success">View App</a></center>
+					<center><a href="https://itunes.apple.com/us/app/flip-crash/id1032532002?mt=8" class="btn btn-success" target="_blank">View App</a></center>
   				</div>
 				<hr>
   			</div><!-- End row -->
@@ -301,10 +310,10 @@
 						the brilliant open source programming community, you can see this project on GitHub.
 					</p>
 					<br>
-					<center><a href="https://github.com/maxg203/GraphingUtility" class="btn btn-success">View on GitHub</a></center><br>
+					<center><a href="https://github.com/maxg203/GraphingUtility" class="btn btn-success" target="_blank" >View on GitHub</a></center><br>
   				</div>
   				<div class="col-sm-8">
-  					<a href="https://github.com/maxg203/GraphingUtility"><img src="images/grapher.jpg" class="img-responsive" alt="image"></a>
+  					<a href="https://github.com/maxg203/GraphingUtility"><img src="images/grapher.jpg" class="img-responsive" target="_blank" alt="image"></a>
   				</div>
   			</div><!-- End row -->
 
@@ -324,7 +333,7 @@
 		  							<i class="fa fa-5x fa-youtube-play" aria-hidden="true"></i>
 		  							<h4>Favourite YouTubers</h4>
 		  							<p>
-										<a href="https://www.youtube.com/channel/UCU1iJ2ChGwaNLvBjip0p2Ag">Christian Guzman</a><br>
+										<a href="https://www.youtube.com/channel/UCU1iJ2ChGwaNLvBjip0p2Ag" target="_blank">Christian Guzman</a><br>
 										<a href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Linus Tech Tips</a><br>
 										<a href="https://www.youtube.com/user/learncodeacademy/featured">LearnCode.academy</a><br>
 										<a href="https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A">Numberphile</a><br>
@@ -522,15 +531,14 @@
 	<script src="js/lightbox.min.js"></script>
 	<script src="js/main.js"></script>
 
+	<!-- Google Analytics code -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 	  ga('create', 'UA-81233429-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
   </body>
 </html>
