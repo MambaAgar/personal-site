@@ -18,11 +18,26 @@ body {
 }
 
 #my-name {
-    font-size: 10vw;
+    font-size: 8vw;
+    color: white;
 }
 
 #my-roll {
     font-size: 30px;
+    color: white;
+}
+
+#my-intro {
+    color: white;
+}
+
+#panda-text {
+    color: grey;
+    font-size: 8vw;
+}
+
+#panda-coming-soon {
+    color: black;
 }
 
 .asap-font {
